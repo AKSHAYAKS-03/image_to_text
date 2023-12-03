@@ -9,7 +9,6 @@ def query(filename):
         data = filename
         response = requests.post(API_URL, headers=headers, data=data)
         return response.json()
-
 inp_img_link = st.text_input("Enter image link")
 button_sub = st.button("Submit")
 
